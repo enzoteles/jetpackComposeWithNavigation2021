@@ -1,5 +1,3 @@
 <resources>
-    <string name="app_name">Jetpack-Navigation</string>
-    <string name="main_screen">main_screen</string>
-    <string name="detail_screen">detail_screen</string>
+    <string name="app_name">JetPackCompose2021</string>
 </resources>
