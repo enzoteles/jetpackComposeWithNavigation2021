@@ -11,8 +11,6 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.example.jetpackcompose2021.ui.screen.DetailScreen
-import com.example.jetpackcompose2021.ui.screen.ListScreen
 import com.example.jetpackcompose2021.ui.screen.Screen
 import com.example.jetpackcompose2021.ui.theme.JetPackCompose2021Theme
 
@@ -62,7 +60,7 @@ internal fun Navigation() {
             Message("Julhia", "Teles")
         )
         composable(route = Screen.ListCommicsScreen.route) {
-            ListScreen(listMessage){ nameScreen->
+            ListCharacter(listMessage){ nameScreen->
                 navController.navigate(nameScreen)
             }
         }
@@ -76,7 +74,9 @@ internal fun Navigation() {
         ){ entry->
             val index = entry.arguments?.getInt("index") ?: 0
             val msg = listMessage[index]
-            DetailScreen(msg = msg)
+            DetailCharacter(msg = msg){
+                navController.popBackStack()
+            }
         }
     }
 }
