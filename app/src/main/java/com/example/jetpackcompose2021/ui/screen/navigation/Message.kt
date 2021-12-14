@@ -1,4 +1,4 @@
-package com.example.jetpackcompose2021
+package com.example.jetpackcompose2021.ui.screen.navigation
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

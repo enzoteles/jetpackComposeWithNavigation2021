@@ -9,7 +9,9 @@ import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import com.example.jetpackcompose2021.ui.screen.Screen
+import com.example.jetpackcompose2021.ui.screen.navigation.Message
+import com.example.jetpackcompose2021.ui.screen.navigation.MessageListItem
+import com.example.jetpackcompose2021.ui.screen.navigation.Screen
 
 @Composable
 fun ListCharacter(
